@@ -1,2 +1,15 @@
-[InternetShortcut]
-URL=https://github.com/javierasping/atlas/blob/main/_layouts/archive-taxonomy.html
+---
+layout: default
+author_profile: false
+---
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <div class="archive">
+    <h1 class="page__title">{{ page.title }}</h1>
+    {% for post in page.posts %}
+      {% include archive-single.html %}
+    {% endfor %}
+  </div>
+</div>
